@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yogurt</title>
+
+  <!-- Bootstrap CSS for responsive styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+        crossorigin="anonymous">
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+          integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+          crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <style>
+    /* Reset spacing and box sizing */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Base body styles */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #d69c9c;
+      background-color: #fff6f6;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #ffbbbb;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #ffbbbb;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    /* Main container for sections */
+    .container {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Introduction section with text and image */
+    .intro {
+      display: flex;
+      flex-direction: column; /* stack on small screens */
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    /* Image styling: full width on small screens */
+    .intro img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px hsl(0, 42%, 56%);
+    }
+
+    /* Text container within the intro */
+    .intro-text {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    /* Feature list section */
+    .features {
+      background-color: #ffecec;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
+      border-radius: 10px;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #ee7171;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .features li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ffbbbb;
+    }
+
+    /* Footer section */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffff;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive layout for tablets and up */
+    @media (min-width: 768px) {
+      .intro {
+        flex-direction: row; /* side-by-side layout */
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      .intro-text {
+        flex: 1;
+        padding-right: 2rem;
+      }
+
+      .intro img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Flavors</a>
+    <a href="#">Nutrition</a>
+  </nav>
+
+  <!-- Page header -->
+  <header>
+    <h1>Yogurt</h1>
+    <p>Creamy, Sweet, Delicious</p>
+  </header>
+
+  <div class="container">
+    <!-- Intro section: text + image -->
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Why You'll Love It</h2>
+        <p>
+          Yogurt is a delightful blend of rich, creamy texture and naturally sweet fruit.
+          Whether it's breakfast, a snack, or a post-workout treat.
+        </p>
+      </div>
+      <!-- Image of yogurt -->
+      <img src="images/strawberry-yogurt.jpg" alt="Strawberry Yogurt">
+    </section>
+
+    <!-- Feature highlights -->
+    <section class="features">
+      <h2>Benefits at a Glance</h2>
+      <ul>
+        <li>14g Protein per serving</li>
+        <li>No artificial sweeteners</li>
+        <li>Gluten-free & vegetarian</li>
+        <li>Made with real strawberries</li>
+        <li>Supports digestive health</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    &copy; 2025 Yogurt | Designed by Christopher Bacidore
+  </footer>
+
+</body>
+</html>
